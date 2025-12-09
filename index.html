@@ -185,7 +185,7 @@
         <div>
           <h2 class="text-4xl font-bold text-gray-900">La trilemme des blockchains</h2>
           <ul class="space-y-3 text-lg text-gray-700 mt-4">
-            <li>• Sécurité, décentralisation, évolutivité.</li>
+            <li>• Sécurité, décentralisation et évolutivité.</li>
             <li>• Souvent deux axes optimisés au détriment du troisième.</li>
             <li>• Les choix d’architecture matérialisent ce compromis.</li>
           </ul>
@@ -200,92 +200,213 @@
     </div>
 
     <!-- Slide 4 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="4">
-      <h2 class="text-4xl font-bold text-gray-900">Axes de la trilemme</h2>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-8" data-slide="4">
+      <h2 class="text-4xl font-bold text-gray-900">Le Trilemme des Blockchains</h2>
       <div class="grid md:grid-cols-3 gap-6 text-lg text-gray-800">
-        <div class="bg-white p-6 rounded border border-slate-200">
-          <p class="font-semibold mb-2">Sécurité</p>
-          <p>Finalité forte, résistance aux attaques.</p>
+
+        <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+          <div class="flex items-center space-x-3 text-green-700 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <p class="text-2xl font-bold text-gray-800">Sécurité</p>
+          </div>
+          <p class="text-gray-600">Résistance aux attaques (51%), finalité des transactions et intégrité du protocole.
+          </p>
         </div>
-        <div class="bg-white p-6 rounded border border-slate-200">
-          <p class="font-semibold mb-2">Décentralisation</p>
-          <p>Beaucoup de validateurs, barrières d’entrée faibles.</p>
+
+        <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+          <div class="flex items-center space-x-3 text-purple-700 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-2xl font-bold text-gray-800">Décentralisation</p>
+          </div>
+          <p class="text-gray-600">Nombre élevé de validateurs, barrières d'entrée faibles et résistance à la censure.
+          </p>
         </div>
-        <div class="bg-white p-6 rounded border border-slate-200">
-          <p class="font-semibold mb-2">Évolutivité</p>
-          <p>Débit élevé, faible latence, coûts contenus.</p>
+
+        <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+          <div class="flex items-center space-x-3 text-blue-700 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 7h8m0 0v8m0-8l-8 8m-2 2v-6m-2 2h6M4 17l4 4 4-4" />
+            </svg>
+            <p class="text-2xl font-bold text-gray-800">Évolutivité</p>
+          </div>
+          <p class="text-gray-600">Débit (TPS) élevé, latence faible, et frais de transaction acceptables pour tous.</p>
         </div>
+
       </div>
     </div>
 
     <!-- Slide 5 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="5">
-      <div class="grid md:grid-cols-3 gap-6 items-center">
-        <div class="md:col-span-2">
-          <h2 class="text-4xl font-bold text-indigo-600">Ethereum dans la trilemme</h2>
-          <ul class="space-y-3 text-lg text-gray-700 mt-3">
-            <li>• Priorise sécurité + décentralisation au niveau L1.</li>
-            <li>• Scalabilité déléguée aux L2 (rollups, validiums).</li>
-            <li>• Matériel de validation relativement accessible.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="5">
+      <h2 class="text-4xl font-bold text-gray-900">Ethereum : L'approche Modulaire</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Priorité L1 (La Base)</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Priorise la <strong>Sécurité</strong> et la <strong>Décentralisation</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le réseau de base est lent et coûteux (faible Évolutivité).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le matériel de validation (nœuds) est accessible (haute décentralisation).</p>
+            </li>
           </ul>
         </div>
-        <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 text-sm text-indigo-900 space-y-2">
-          <p class="font-semibold text-indigo-700">Repères rapides</p>
-          <p>Temps de bloc ≈ 12s (slots 12s, epoch ~6,4 min).</p>
-          <p>Staking min 32 ETH (solo), >1M validateurs (2025).</p>
-          <p>Couche L2 : >2000 TPS agrégés (estimation rollups).</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-green-700 mb-4">Mise à l'Échelle L2 (Les Rollups)</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p>Scalabilité déléguée aux <strong>Rollups</strong> (ex: <strong>Arbitrum</strong>,
+                <strong>Optimism</strong>).
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p>Atteint l'axe <strong>Évolutivité</strong> grâce au débit agrégé des L2.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p><strong>Compromis L2 :</strong> Introduction d'un point de centralisation temporaire via le
+                <strong>Séquenceur</strong>.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Slide 6 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="6">
-      <div class="grid md:grid-cols-3 gap-6 items-center">
-        <div class="md:col-span-2">
-          <h2 class="text-4xl font-bold text-emerald-600">Solana dans la trilemme</h2>
-          <ul class="space-y-3 text-lg text-gray-700 mt-3">
-            <li>• Priorité : haut débit L1.</li>
-            <li>• Matériel de validation plus puissant requis.</li>
-            <li>• Décentralisation suffisante visée malgré blocs denses.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="6">
+      <h2 class="text-4xl font-bold text-gray-900">Solana : L'approche Monolithique</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Priorité L1 : Vitesse & Débit</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Priorité absolue à l'<strong>Évolutivité</strong> et la <strong>faible Latence</strong> (modèle
+                Monolithique).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Performance : Temps de bloc cible de seulement <strong>~400–600 ms</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le consensus est basé sur le <strong>Proof-of-Stake (PoS)</strong>, qui utilise l'horloge <strong>Proof
+                  of History (PoH)</strong> pour implémenter de manière ultra-rapide l'algorithme <strong>Tower
+                  BFT</strong>.</p>
+            </li>
           </ul>
         </div>
-        <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 text-sm text-emerald-900 space-y-2">
-          <p class="font-semibold text-emerald-700">Repères rapides</p>
-          <p>Temps de bloc cible ~400-600 ms.</p>
-          <p>TPS observés (moyenne réseau) : 2k–5k, pics >>100k.</p>
-          <p>Config valideur typique : CPU 12+ cores, 128 Go RAM, NVMe.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Compromis & Exigences</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Matériel de validation <strong>très puissant</strong> requis (ex: 12+ cœurs, 128 Go RAM, NVMe).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Forte pression sur le <strong>Leader du slot</strong>, qui est l'unique point de production temporaire.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le coût du matériel et la pression du Leader posent un défi à la <strong>Décentralisation</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le besoin de vitesse a mené à des <strong>incidents notables</strong> de pannes totales du réseau.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Slide 7 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="7">
-      <div class="grid md:grid-cols-3 gap-6 items-center">
-        <div class="md:col-span-2">
-          <h2 class="text-4xl font-bold text-sky-600">Sui dans la trilemme</h2>
-          <ul class="space-y-3 text-lg text-gray-700 mt-3">
-            <li>• Modèle objet pour paralléliser les transactions.</li>
-            <li>• BFT et modularité consensus/exécution/stockage.</li>
-            <li>• Cherche un équilibre débit + sécurité.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="7">
+      <h2 class="text-4xl font-bold text-gray-900">Sui : L'approche Axée sur l'Objet</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-sky-700 mb-4">Innovation et Performance</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Priorité : Atteindre l'équilibre <strong>Débit + Sécurité</strong> via le <strong>Modèle
+                  Objet</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le Modèle Objet permet le <strong>parallélisme</strong> des transactions pour une haute évolutivité.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Finalité ultra-rapide : Cible de <strong>
+                  <400 ms</strong> via le protocole <strong>Mysticeti</strong>.</p>
+            </li>
           </ul>
         </div>
-        <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-sm text-sky-900 space-y-2">
-          <p class="font-semibold text-sky-700">Repères rapides</p>
-          <p>Finalité rapide via Mysticeti (<200-400 ms cible).</p>
-              <p>TPS labo annoncés > 100k (parallélisme objet).</p>
-              <p>Gas bas pour objets simples (owned) sans consensus complet.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Architecture Technique</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Langage de contrat intelligent : <strong>Move</strong>, axé sur la propriété des objets (owned/shared).
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Modularité du système : Séparation des tâches pour une efficacité maximale.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Consensus <strong>DAG-BFT</strong> : Basé sur <strong>Narwhal</strong> (Couche DAG) et
+                <strong>Mysticeti</strong> (Algorithme BFT).
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Slide 8 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="8">
-      <h2 class="text-4xl font-bold text-gray-900">Ethereum – origines</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <ul class="space-y-3">
-          <li>• Lancé en 2015 par Vitalik Buterin et des cofondateurs.</li>
-          <li>• Objectif : au-delà du transfert de valeur (smart contracts).</li>
-          <li>• Vision : une « machine virtuelle mondiale » programmable.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="8">
+      <h2 class="text-4xl font-bold text-gray-900">Ethereum – Origines</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700 items-center">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Lancé en 2015 par <strong>Vitalik Buterin</strong> et une équipe de cofondateurs (Gavin Wood, Charles
+              Hoskinson, etc.).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Objectif : aller au-delà du transfert de valeur (introduction des <strong>smart contracts</strong>).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Vision : créer une « <strong>machine virtuelle mondiale</strong> » (EVM) programmable.</p>
+          </li>
         </ul>
         <div class="flex justify-center items-center">
           <img class="w-44 h-44 object-contain" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=040"
@@ -295,13 +416,23 @@
     </div>
 
     <!-- Slide 9 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="9">
-      <h2 class="text-4xl font-bold text-gray-900">Solana – origines</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <ul class="space-y-3">
-          <li>• Anatoly Yakovenko + Solana Labs.</li>
-          <li>• Whitepaper centré sur Proof of History (PoH).</li>
-          <li>• Ambition : L1 haute performance pour usages massifs.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="9">
+      <h2 class="text-4xl font-bold text-gray-900">Solana – Origines</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700 items-center">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Fondée par <strong>Anatoly Yakovenko</strong> et l'entreprise <strong>Solana Labs</strong> (2017).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Le *whitepaper* est centré sur la technologie d'horloge <strong>Proof of History (PoH)</strong>.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Ambition : créer une L1 <strong>haute performance</strong> capable de supporter des usages à l'échelle
+              massive.</p>
+          </li>
         </ul>
         <div class="flex justify-center items-center">
           <img class="w-44 h-44 object-contain" src="https://cryptologos.cc/logos/solana-sol-logo.png?v=040"
@@ -311,13 +442,23 @@
     </div>
 
     <!-- Slide 10 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="10">
-      <h2 class="text-4xl font-bold text-gray-900">Sui – origines</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <ul class="space-y-3">
-          <li>• Mysten Labs, ex-équipe Diem (Meta).</li>
-          <li>• Mainnet 2023.</li>
-          <li>• Modèle objet + Move pour simplifier la gestion d’actifs.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="10">
+      <h2 class="text-4xl font-bold text-gray-900">Sui – Origines</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700 items-center">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Créée par <strong>Mysten Labs</strong> (fondateurs issus de l'équipe <strong>Diem / Meta</strong>).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Lancée sur le *mainnet* en <strong>mai 2023</strong>.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="font-extrabold text-xl mr-3">•</span>
+            <p>Innovation axée sur le <strong>Modèle Objet</strong> et le langage <strong>Move</strong> pour une
+              meilleure gestion d'actifs.</p>
+          </li>
         </ul>
         <div class="flex justify-center items-center">
           <img class="w-44 h-44 object-contain" src="https://cryptologos.cc/logos/sui-sui-logo.png?v=040" alt="Sui" />
@@ -326,179 +467,190 @@
     </div>
 
     <!-- Slide 11 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-8" data-slide="11">
-      <h2 class="text-4xl font-bold text-indigo-600">Ethereum aujourd’hui</h2>
-      <div class="grid md:grid-cols-3 gap-5 text-gray-800">
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
-          <p class="text-sm uppercase tracking-wide text-slate-500 mb-2">Consensus</p>
-          <p class="font-semibold text-lg mb-1">PoS + LMD-GHOST</p>
-          <p class="text-sm text-slate-600">Finalité via Gasper, sécurité forte.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="11">
+      <h2 class="text-4xl font-bold text-gray-900">Ethereum : La Stratégie Modulaire L1 + L2</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-4">La Couche 1 (L1) : Ancre de Sécurité</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Consensus : <strong>Proof-of-Stake (PoS)</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Rôle : Servir de <strong>Couche de Règlement</strong> (Settlement) et d'ancre de
+                <strong>Sécurité</strong>.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>Stockage : Les données compressées des L2 y sont inscrites pour garantir l'intégrité.</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
-          <p class="text-sm uppercase tracking-wide text-slate-500 mb-2">Rôle L1</p>
-          <p class="font-semibold text-lg mb-1">Couche de règlement</p>
-          <p class="text-sm text-slate-600">Ancre de sécurité pour les L2.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5">
-          <p class="text-sm uppercase tracking-wide text-slate-500 mb-2">Scalabilité</p>
-          <p class="font-semibold text-lg mb-1">Déportée L2</p>
-          <p class="text-sm text-slate-600">Rollups optimistes / zk en première ligne.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Slide 12 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="12">
-      <h2 class="text-4xl font-bold text-indigo-600">Rôle des L2</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">Rollups optimistes</p>
-          <p class="text-sm text-slate-600">Fraude proofs, délais de challenge, coûts modérés.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">zk-rollups</p>
-          <p class="text-sm text-slate-600">Valid proofs, finalité rapide, coût data majoritaire.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">Impact dev</p>
-          <p class="text-sm text-slate-600">Choix du L2 = compromis coûts/latence/compat.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">Données</p>
-          <p class="text-sm text-slate-600">Compressées sur L1, exécution déportée.</p>
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">La Couche 2 (L2) : Évolutivité et Exécution</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p>Scalabilité : <strong>Déportée aux Rollups</strong> qui gèrent l'exécution des transactions (Débit
+                élevé).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p>Rollups **Optimistes** (ex: Arbitrum) : Sécurité assurée par des <strong>preuves de fraude</strong>.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 font-extrabold text-xl mr-3">•</span>
+              <p>Rollups **zk** (Zero-Knowledge) : Sécurité assurée par des <strong>preuves de validité</strong>
+                (finalité plus rapide).</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Slide 13 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="13">
-      <h2 class="text-4xl font-bold text-emerald-600">PoH + Tower BFT</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">PoH</p>
-          <p class="text-sm text-slate-600">Horloge cryptographique pour ordonner sans synchro continue.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="12">
+      <h2 class="text-4xl font-bold text-gray-900">Solana : Les Moteurs d'Exécution L1</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Consensus (PoH + Tower BFT)</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p><strong>Proof of History (PoH) :</strong> Horloge cryptographique pour ordonner les transactions sans
+                nécessiter de synchronisation globale continue.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p><strong>Tower BFT :</strong> Algorithme BFT qui utilise le PoH. Il pénalise fortement les validateurs
+                qui changent de *fork* (ce qui assure la finalité).</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-6">
-          <p class="font-semibold mb-2">Tower BFT</p>
-          <p class="text-sm text-slate-600">Votes + lockouts qui pénalisent le changement de fork.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sealevel : Le Runtime Parallèle</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Permet l'exécution <strong>parallèle</strong> des transactions sur le même *état* (state).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Les transactions doivent déclarer à l'avance les comptes qu'elles vont lire/écrire.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Si les transactions sont indépendantes, elles sont traitées <strong>simultanément</strong> (grande
+                efficacité pour les usages DeFi/NFT).</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- Slide 14 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="14">
-      <h2 class="text-4xl font-bold text-emerald-600">Sealevel : exécution parallèle</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-lg text-gray-700">
-        <ul class="space-y-3">
-          <li>• Transactions déclarent comptes lus/écrits.</li>
-          <li>• Transactions indépendantes en parallèle.</li>
-          <li>• Très efficace pour DeFi/NFT à gros volume.</li>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="13">
+      <h2 class="text-4xl font-bold text-gray-900">Solana : Standards SPL et Tokens</h2>
+      <div class="text-lg text-gray-800">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+            <p><strong>SPL (Solana Program Library) :</strong> C'est la collection de programmes on-chain, incluant le
+              standard de tokens natif (l'équivalent de ERC-20).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+            <p><strong>Token-2022 :</strong> L'évolution du standard de tokens, ajoutant des fonctionnalités avancées
+              directement au niveau de la primitive (frais de transfert, hooks, etc.).</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+            <p>Utilité : Permet la construction efficace de primitives **DeFi** et **NFT** directement sur ces standards
+              optimisés.</p>
+          </li>
         </ul>
-        <div class="bg-white p-6 rounded border border-slate-200 text-gray-700">
-          <p class="font-semibold mb-2">Mental model</p>
-          <p>Déclarer les comptes ≈ locking précis → moins de contention.</p>
-        </div>
       </div>
-    </div>
-
-    <!-- Slide 15 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="15">
-      <h2 class="text-4xl font-bold text-emerald-600">SPL / Token-2022</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• SPL = standard de tokens natif (équivalent ERC).</li>
-        <li>• Token-2022 ajoute intérêts, frais, hooks.</li>
-        <li>• Primitives DeFi et NFT directement dessus.</li>
-      </ul>
     </div>
 
     <!-- Slide 16 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="16">
-      <h2 class="text-4xl font-bold text-sky-600">Sui en bref</h2>
-      <div class="grid md:grid-cols-3 gap-4 text-gray-800 text-sm">
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold">Modèle objet</p>
-          <p>Tout est objet possédé ou partagé, donc moins de gros contrats monolithiques.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="16">
+      <h2 class="text-4xl font-bold text-gray-900">Sui : L'Innovation du Modèle Objet</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-sky-700 mb-4">La Définition du Modèle Objet</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Tout est une instance d'<strong>objet unique</strong> : tokens, coffres, *marketplaces*.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Propriété explicite : <strong>Owned</strong> (un seul propriétaire) ou <strong>Shared</strong> (utilisé
+                par plusieurs).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Seule blockchain à utiliser cette <strong>approche comme socle d'exécution</strong>.</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold">Parallélisme</p>
-          <p>Les transactions qui touchent des objets différents passent en parallèle.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold">Move</p>
-          <p>Langage pensé pour la sécurité des ressources et la composition d’objets.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">La Clé de l'Évolutivité</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Exécution <strong>Parallèle</strong> : Les transactions sur des <strong>objets disjoints</strong> ne se
+                bloquent pas.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Haut débit : Le *runtime* peut traiter les transactions <strong>indépendantes simultanément</strong>.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Moins de contention : Les opérations sur des objets <strong>Owned</strong> peuvent parfois éviter le
+                consensus complet.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- Slide 17 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="17">
-      <h2 class="text-4xl font-bold text-sky-600">Modèle objet – principes</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Tout est objet : tokens, coffres, marketplaces.</li>
-        <li>• Propriété explicite (owned, shared, immutable).</li>
-        <li>• Transactions déclarent les objets modifiés.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 18 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="18">
-      <h2 class="text-4xl font-bold text-sky-600">Owned vs Shared objects</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Owned : un seul propriétaire (ex : NFT).</li>
-        <li>• Shared : utilisé par plusieurs (ex : DEX).</li>
-        <li>• Objets disjoints = exécution parallèle sans blocage.</li>
-        <li>• Certaines opérations simples sans consensus complet.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 19 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="19">
-      <h2 class="text-4xl font-bold text-sky-600">Parallélisme grâce au modèle objet</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Transactions sur objets distincts ne se bloquent pas.</li>
-        <li>• Débit dépend de la contention sur un même objet.</li>
-        <li>• Préférence pour des objets granulaires vs contrats monolithiques.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 20 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="20">
-      <h2 class="text-4xl font-bold text-sky-600">Mysticeti (successeur Narwhal/Bullshark)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Remplace Narwhal/Bullshark, reste basé DAG.</li>
-        <li>• Moins de tours de messages → latence réduite.</li>
-        <li>• Finalité plus rapide, CPU mieux utilisé.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 21 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="21">
-      <div class="grid md:grid-cols-2 gap-6">
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="17">
+      <h2 class="text-4xl font-bold text-gray-900">Move : Le Runtime Orienté Objet</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
         <div>
-          <h2 class="text-4xl font-bold text-sky-600">Langage Move sur Sui</h2>
-          <div class="grid md:grid-cols-2 gap-4 text-gray-800 mt-4">
-            <div class="bg-white border border-slate-200 rounded-xl p-4">
-              <p class="font-semibold mb-1">Ressources</p>
-              <p class="text-sm text-slate-600">Pas de double dépense accidentelle, ownership strict.</p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-xl p-4">
-              <p class="font-semibold mb-1">Modules & structs</p>
-              <p class="text-sm text-slate-600">Conçus pour le modèle objet (owned/shared).</p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-xl p-4">
-              <p class="font-semibold mb-1">Capacités</p>
-              <p class="text-sm text-slate-600">Contrôler qui peut transférer, brûler ou muter un objet.</p>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-xl p-4">
-              <p class="font-semibold mb-1">Sécurité VM</p>
-              <p class="text-sm text-slate-600">Vérifications de type et de ressources à la compile et à l’exécution.
-              </p>
-            </div>
-          </div>
+          <h3 class="text-2xl font-semibold text-sky-700 mb-4">Familiarité pour les Développeurs</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Modèle <strong>similaire à la POO</strong> (Programmation Orientée Objet) classique, car on interagit
+                directement avec des <strong>objets</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Facilite la transition pour les développeurs **"old school"** habitués aux systèmes à base de classes
+                et d'objets.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Sécurité : Le système de types du langage Move garantit l'<strong>ownership strict</strong> (pas de
+                double dépense accidentelle).</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-          <p class="text-sm text-slate-500 mb-2">Exemple Move (objet coin possédé)</p>
-          <pre><code class="language-rust">// Module simple sur Sui
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Exemple Move (Objet Coin)</h3>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+            <pre><code class="language-rust">// Création d'un objet 'coin' possédé
 module my_coin::mint {
     use sui::coin;
     use sui::tx_context::{Self, TxContext};
@@ -507,244 +659,300 @@ module my_coin::mint {
         recipient: address,
         ctx: &mut TxContext
     ) {
-        let new_coin = coin::mint(1000, ctx); // 1000 unités
-        coin::transfer(new_coin, recipient, ctx);
+        let new_coin = coin::mint(1000, ctx); // Crée un objet Coin
+        coin::transfer(new_coin, recipient, ctx); // Transfère l'objet au destinataire
     }
 }
 </code></pre>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="18">
+      <h2 class="text-4xl font-bold text-gray-900">Mysticeti : Le Consensus DAG-BFT</h2>
+      <div class="text-lg text-gray-800">
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+            <p>Le consensus est basé sur <strong>Narwhal/Mysticeti</strong>, une architecture <strong>DAG-BFT</strong>.
+            </p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+            <p><strong>Mysticeti</strong> (successeur de Bullshark) est optimisé pour la <strong>vitesse
+                maximale</strong>.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+            <p>Grâce à la séparation des tâches et au parallélisme, il atteint une **finalité** ultra-rapide (cible :
+              <strong>
+                400 ms
+              </strong>).
+            </p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+            <p>Distinction clé : **Minimisation des "tours de messages"** entre validateurs, optimisant l'utilisation du
+              CPU et réduisant la latence globale.</p>
+          </li>
+        </ul>
       </div>
     </div>
 
     <!-- Slide 22 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="22">
-      <h2 class="text-4xl font-bold text-indigo-600">Standards de contrats (Ethereum)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Solidity / Vyper.</li>
-        <li>• ERC-20, ERC-721, ERC-1155…</li>
-        <li>• Tooling massif : OpenZeppelin, Foundry, Hardhat.</li>
-      </ul>
-    </div>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="22">
+      <h2 class="text-4xl font-bold text-gray-900">Les Écosystèmes de Développement : Langages et Standards</h2>
 
-    <!-- Slide 23 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="23">
-      <h2 class="text-4xl font-bold text-emerald-600">Programmes on-chain (Solana)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Rust via SDK Solana.</li>
-        <li>• Anchor simplifie macros/IDL.</li>
-        <li>• Comptes remplacent le storage global EVM.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 24 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="24">
-      <h2 class="text-4xl font-bold text-sky-600">Move et standards d’objets (Sui)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Modules Move déployés on-chain.</li>
-        <li>• Standards basés sur objets (coins, NFT…), pas ERC.</li>
-        <li>• Objets composables : un objet peut en posséder d’autres.</li>
-      </ul>
+      <div class="overflow-x-auto">
+        <table class="w-full text-lg text-left text-gray-800 border-collapse">
+          <thead class="text-xl text-white uppercase bg-gray-900">
+            <tr>
+              <th scope="col" class="p-4 rounded-tl-lg">Plateforme</th>
+              <th scope="col" class="p-4">Langages Clés</th>
+              <th scope="col" class="p-4">Standards / Modèle</th>
+              <th scope="col" class="p-4 rounded-tr-lg">Tooling / Simplification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-indigo-50 border-b border-gray-200">
+              <th scope="row" class="p-4 font-semibold text-indigo-700">Ethereum (EVM)</th>
+              <td class="p-4"><strong>Solidity</strong> / Vyper</td>
+              <td class="p-4">Standards <strong>ERC-20</strong>, <strong>ERC-721</strong> (NFT), ERC-1155</td>
+              <td class="p-4">Écosystème massif : <strong>OpenZeppelin</strong>, Foundry, Hardhat</td>
+            </tr>
+            <tr class="bg-emerald-50 border-b border-gray-200">
+              <th scope="row" class="p-4 font-semibold text-emerald-700">Solana</th>
+              <td class="p-4"><strong>Rust</strong> via SDK Solana</td>
+              <td class="p-4">Standards <strong>SPL</strong> (<strong>Token-2022</strong>). Les Comptes remplacent le
+                *storage* global EVM.</td>
+              <td class="p-4"><strong>Anchor</strong> (simplification des macros/IDL)</td>
+            </tr>
+            <tr class="bg-sky-50">
+              <th scope="row" class="p-4 font-semibold text-sky-700">Sui</th>
+              <td class="p-4">Langage <strong>Move</strong> (Modules)</td>
+              <td class="p-4">Standards basés sur les <strong>Objets</strong> (pas ERC). Objets composables.</td>
+              <td class="p-4">Modèle objet <strong>POO</strong> (plus intuitif pour certains développeurs)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- Slide 25 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="25">
-      <h2 class="text-4xl font-bold text-gray-900">Portage Ethereum ↔ autres</h2>
-      <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-indigo-700">EVM → Solana</p>
-          <p>Réécriture en Rust/Anchor, penser comptes explicitement et exécution parallèle.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="23">
+      <h2 class="text-4xl font-bold text-gray-900">Portabilité des Projets EVM : Les Défis de Migration</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Défis vers Solana</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Changement d'architecture : Passage du modèle EVM monolithique au modèle <strong>orienté
+                  comptes/runtime</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Langage : Nécessite une <strong>réécriture complète en Rust/Anchor</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Stockage/Exécution : Obligation de penser aux comptes explicitement et à l'<strong>exécution
+                  parallèle</strong> (Sealevel).</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-sky-700">EVM → Sui</p>
-          <p>Repenser les assets en objets owned/shared et coder en Move.</p>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-gray-900">Rester en EVM</p>
-          <p>Choisir une sidechain ou L2 EVM pour limiter la réécriture.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-sky-700 mb-4">Défis vers Sui</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Changement de paradigme : Abandon du modèle *account-centric* pour le <strong>Modèle Objet</strong>.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Langage : Nécessite une <strong>réécriture complète en Move</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-sky-600 font-extrabold text-xl mr-3">•</span>
+              <p>Assets : Repenser la logique d'actifs en objets <strong>Owned</strong> vs <strong>Shared</strong> (plus
+                de travail initial, mais modèle plus riche).</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 26 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="26">
-      <h2 class="text-4xl font-bold text-emerald-600">Compatibilité Solana</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Architecture très différente de l’EVM.</li>
-        <li>• Repenser stockage et accès aux données.</li>
-        <li>• Couches EVM expérimentales mais non natives.</li>
-      </ul>
-    </div>
+      <hr class="border-gray-300 my-4" />
 
-    <!-- Slide 27 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="27">
-      <h2 class="text-4xl font-bold text-sky-600">Compatibilité Sui</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Modèle objet + Move = changement de paradigme.</li>
-        <li>• Remodeler les assets en objets owned/shared.</li>
-        <li>• Plus de travail initial, mais modèles d’actifs plus riches.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 28 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="28">
-      <h2 class="text-4xl font-bold text-indigo-600">Incidents Ethereum</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• The DAO, bugs de contrats, forks correctifs.</li>
-        <li>• Surface d’attaque énorme malgré audits.</li>
-        <li>• Importance tooling formel et bug bounties.</li>
-      </ul>
+      <div class="text-lg text-gray-800">
+        <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Alternative EVM</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+            <p>Pour éviter la réécriture, l'alternative est de choisir une <strong>Sidechain</strong> ou un <strong>L2
+                EVM</strong> (Arbitrum, Optimism, Polygon, etc.) pour conserver le code Solidity existant.</p>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Slide 29 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="29">
-      <h2 class="text-4xl font-bold text-emerald-600">Interruptions réseau (Solana)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Plusieurs arrêts depuis le lancement.</li>
-        <li>• Bugs runtime, congestion, ordonnancement.</li>
-        <li>• Culture performance → cycle de risques rapide.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 30 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="30">
-      <h2 class="text-4xl font-bold text-gray-900">Décentralisation & matériel</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Ethereum : entrée validateur plus accessible.</li>
-        <li>• Solana / Sui : besoins matériels plus élevés.</li>
-        <li>• Trade-off performance vs barrière d’entrée.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 31 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="31">
-      <h2 class="text-4xl font-bold text-gray-900">Comment lire les TPS ?</h2>
-      <div class="grid md:grid-cols-2 gap-5 text-sm text-slate-700">
-        <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2">
-          <p class="font-semibold text-gray-900">À garder en tête</p>
-          <p>TPS théorique ≠ usage réel. Les transactions simples gonflent le chiffre.</p>
-          <p>Finalité (latence) est tout aussi importante que le débit.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="29">
+      <h2 class="text-4xl font-bold text-gray-900">Solana : Problèmes de Résilience et Congestion</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Causes et Faits Marquants</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Le réseau a connu plusieurs <strong>arrêts complets</strong> et de longues périodes de forte congestion
+                (notamment en <strong>2022</strong>).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Causes principales : <strong>Congestion</strong> massive due aux transactions (spam/bots) et bugs liés
+                à l'<strong>ordonnancement</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>La <strong>culture de la performance</strong> rapide a exposé le réseau à un cycle de risques plus
+                rapide.</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-5 space-y-2">
-          <p class="font-semibold text-gray-900">Lecture rapide</p>
-          <p>Demander la méthodo (observé ou labo ?), le type de tx mesurée et le coût utilisateur.</p>
-          <p>Vérifier si le réseau reste fluide quand plusieurs applis tournent en même temps.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Conséquences et Réputation</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Ces arrêts ont soulevé de vives inquiétudes quant à la <strong>résilience</strong> et la
+                <strong>stabilité</strong> de l'architecture L1.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>Image de marque : A renforcé le récit critique sur le <strong>manque de décentralisation</strong>
+                (nécessité de <strong>coordonner un redémarrage manuel</strong> des validateurs).</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-gray-600 font-extrabold text-xl mr-3">•</span>
+              <p>A mené à des <strong>vagues de FUD</strong> (Fear, Uncertainty, Doubt) et a été un facteur de
+                volatilité des prix du SOL.</p>
+            </li>
+          </ul>
         </div>
       </div>
+      <p class="text-sm text-gray-500 mt-4">**Réf. :** Rapports post-mortem de Solana Foundation (incidents 2022) /
+        Analyses de congestion des validateurs.</p>
     </div>
 
     <!-- Slide 32 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="32">
-      <h2 class="text-4xl font-bold text-indigo-600">Performance Ethereum</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• L1 limitée mais sécurisée.</li>
-        <li>• Charge externalisée sur de multiples L2.</li>
-        <li>• Pas d’ambition de tout traiter sur L1.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 33 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="33">
-      <h2 class="text-4xl font-bold text-sky-600">Solana & Sui – performance</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Solana : PoH + Tower + Sealevel → finalité rapide L1.</li>
-        <li>• Sui : parallélisme objet + Mysticeti réduit la latence.</li>
-        <li>• Solana exige réseau/matériel costaud ; Sui optimise contention.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 34 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="34">
-      <h2 class="text-4xl font-bold text-indigo-600">Expérience dev (Ethereum)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Tooling très mature (Hardhat, Foundry, Truffle).</li>
-        <li>• Templates, libs, docs massives.</li>
-        <li>• Fragmentation possible mais forte communauté.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 35 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="35">
-      <h2 class="text-4xl font-bold text-emerald-600">Expérience dev (Solana)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Rust + Anchor : robuste, mais courbe réelle.</li>
-        <li>• Outils : Solana CLI, explorers, indexation.</li>
-        <li>• Debug plus complexe (parallélisme + comptes).</li>
-      </ul>
-    </div>
-
-    <!-- Slide 36 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="36">
-      <h2 class="text-4xl font-bold text-sky-600">Expérience dev (Sui)</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Sui CLI, Explorer, SDK TypeScript dApps.</li>
-        <li>• Move impose discipline stricte sur les actifs.</li>
-        <li>• Docs en progression, écosystème jeune mais dynamique.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 37 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="37">
-      <h2 class="text-4xl font-bold text-gray-900">Choisir sa L1 comme dev</h2>
-      <ul class="space-y-3 text-lg text-gray-700">
-        <li>• Ethereum : compatibilité maximale + L2 variées.</li>
-        <li>• Solana : performance brute pour temps réel massif.</li>
-        <li>• Sui : modèle objet idéal pour actifs complexes parallélisés.</li>
-      </ul>
-    </div>
-
-    <!-- Slide 38 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="38">
-      <h2 class="text-4xl font-bold text-gray-900">Synthèse</h2>
-      <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
-        <div class="bg-white border border-indigo-100 rounded-xl p-4 space-y-2">
-          <p class="text-lg font-semibold text-indigo-700">Ethereum</p>
-          <p>Sécurité et compatibilité max, échelle via L2.</p>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="32">
+      <h2 class="text-4xl font-bold text-gray-900">Synthèse : Les Stratégies de Performance</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg text-gray-800 items-start">
+        <div>
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Ethereum : Stratégie Modulaire (L1 + L2)</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>La <strong>L1</strong> (couche de base) est délibérément <strong>limitée</strong> en débit mais
+                maximale en <strong>sécurité</strong>.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>La <strong>charge d'exécution</strong> est externalisée sur de <strong>multiples L2</strong> (Rollups).
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-indigo-600 font-extrabold text-xl mr-3">•</span>
+              <p>L'ambition n'est <strong>pas</strong> de tout traiter sur L1, mais d'assurer la <strong>disponibilité
+                  des données</strong> pour les L2.</p>
+            </li>
+          </ul>
         </div>
-        <div class="bg-white border border-emerald-100 rounded-xl p-4 space-y-2">
-          <p class="text-lg font-semibold text-emerald-700">Solana</p>
-          <p>L1 rapide pour gros volumes, mais matériel plus costaud.</p>
-        </div>
-        <div class="bg-white border border-sky-100 rounded-xl p-4 space-y-2">
-          <p class="text-lg font-semibold text-sky-700">Sui</p>
-          <p>Modèle objet lisible et parallèle, idéal pour assets composables.</p>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Solana & Sui : Stratégie L1 Haute Performance</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p><strong>Solana :</strong> PoH + Sealevel visent une <strong>finalité très rapide</strong> nativement
+                sur le L1.</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p><strong>Sui :</strong> Le parallélisme basé sur le <strong>modèle objet</strong> et
+                <strong>Mysticeti</strong> réduit la latence au minimum.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-600 font-extrabold text-xl mr-3">•</span>
+              <p>Compromis : <strong>Solana</strong> exige un matériel coûteux ; <strong>Sui</strong> minimise la
+                contention entre objets.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <p class="text-sm text-slate-700">Choisir la L1 = choisir la contrainte principale : compat, perf brute ou modèle
-        objet.</p>
     </div>
 
-    <!-- Slide 39 -->
-    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-6" data-slide="39">
-      <h2 class="text-4xl font-bold text-gray-900">Repères rapides</h2>
-      <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
-        <div class="bg-white border border-indigo-100 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-indigo-700">Ethereum</p>
-          <p>Priorise sécurité et compatibilité, échelle via L2.</p>
-        </div>
-        <div class="bg-white border border-emerald-100 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-emerald-700">Solana</p>
-          <p>L1 rapide pour flux soutenus, demande un matériel plus solide.</p>
-        </div>
-        <div class="bg-white border border-sky-100 rounded-xl p-4 space-y-2">
-          <p class="text-base font-semibold text-sky-700">Sui</p>
-          <p>Modèle objet et finalité rapide, bonne lisibilité des assets.</p>
-        </div>
+    <div class="slide max-w-7xl w-full hidden card p-10 md:p-12 space-y-7" data-slide="34">
+      <h2 class="text-4xl font-bold text-gray-900">Synthèse : L'Expérience Développeur (DX)</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-lg text-left text-gray-800 border-collapse">
+          <thead class="text-xl text-white uppercase bg-gray-900">
+            <tr>
+              <th scope="col" class="p-4 rounded-tl-lg">Plateforme</th>
+              <th scope="col" class="p-4">Tooling et Écosystème</th>
+              <th scope="col" class="p-4">Langage et Discipline</th>
+              <th scope="col" class="p-4 rounded-tr-lg">Courbe d'Apprentissage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-indigo-50 border-b border-gray-200">
+              <th scope="row" class="p-4 font-semibold text-indigo-700">Ethereum (EVM)</th>
+              <td class="p-4"><strong>Tooling très mature</strong> (Hardhat, Foundry, Truffle) et documentation massive.
+              </td>
+              <td class="p-4">Solidity est souple mais la <strong>sécurité</strong> dépend des bonnes pratiques de
+                l'auditeur.</td>
+              <td class="p-4">Faible courbe, mais complexité due à la **fragmentation L2** et aux spécificités EVM.</td>
+            </tr>
+            <tr class="bg-emerald-50 border-b border-gray-200">
+              <th scope="row" class="p-4 font-semibold text-emerald-700">Solana</th>
+              <td class="p-4">Outils solides (Solana CLI, Explorers) mais l'écosystème est moins fragmenté.</td>
+              <td class="p-4"><strong>Rust + Anchor</strong> : Code robuste mais langage exigeant (gestion explicite des
+                comptes).</td>
+              <td class="p-4">Courbe <strong>plus raide</strong> (Rust), et debug plus complexe (parallélisme/comptes).
+              </td>
+            </tr>
+            <tr class="bg-sky-50">
+              <th scope="row" class="p-4 font-semibold text-sky-700">Sui</th>
+              <td class="p-4">Outils fondamentaux (Sui CLI, SDK TypeScript) ; <strong>écosystème jeune</strong> mais
+                dynamique.</td>
+              <td class="p-4">Langage **Move** : impose une <strong>discipline stricte</strong> sur l'ownership des
+                actifs dès la conception.</td>
+              <td class="p-4">Courbe d'apprentissage liée au **nouveau paradigme objet**, mais familier à la POO.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <p class="text-sm text-slate-600">Privilégier la fluidité d’explication : chaque réseau a un pari simple, le reste
-        en découle.</p>
     </div>
 
     <!-- Slide 40 -->
-    <div class="slide max-w-7xl w-full hidden card p-8 md:p-10 space-y-6 text-center" data-slide="40">
+    <div class="slide max-w-7xl w-full h-full hidden p-8 md:p-10 text-center flex flex-col items-center justify-center"
+      data-slide="40">
       <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Merci de votre attention !</h2>
-      <p class="text-xl text-gray-700 mb-2">Questions / Commentaires / Débats ?</p>
+      <p class="text-xl text-gray-700 mb-2">Questions / Commentaires</p>
       <p class="text-gray-500">Monolithes, Modules & Évolutivité — Ethereum vs Solana vs Sui</p>
+      <p class="text-gray-500">William Beaudin</p>
     </div>
   </div>
 
   <!-- Compteur -->
   <div class="fixed top-6 right-6 bg-gray-900 text-white px-4 py-2 font-semibold rounded-lg border border-white/10">
-    <span id="current">1</span> / <span id="total">40</span>
+    <span id="current">1</span> / <span id="total">21</span>
   </div>
 
   <script>
